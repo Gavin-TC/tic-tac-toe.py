@@ -49,7 +49,7 @@ def main():
             time.sleep(1)
             ai_plays(grid)
     else:
-        pass
+        current_turn = None
 
 def place_shape(team, spot):
     os.system("CLS")
@@ -84,7 +84,7 @@ def place_shape(team, spot):
 
 def ai_plays(board): # ai makes a turn
     global current_turn
-    if current_turn == ai_team:
+    if current_turn == ai_team and game_running:
         print(current_turn == ai_team)
 
         print("attemping to place")
